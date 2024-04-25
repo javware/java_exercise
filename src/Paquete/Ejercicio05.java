@@ -3,13 +3,9 @@ package Paquete;
 import java.util.Scanner;
 
 public class Ejercicio05 {
-    // Tasa inicial
-    private static final double TASA_INICIAL = 0.02; // 2%
-
     // Método para calcular la última tasa recibida después de un cierto período de meses
     public static double calcularUltimaTasa(int meses) {
-        // La tasa inicial es 2%
-        double tasa = 0.02;
+        double tasa = 0.02; // La tasa inicial es 2%
         int periodoIncrementoTasa = 3; // La tasa se incrementa cada 3 meses
 
         // Calcular cuántos incrementos han ocurrido
@@ -29,7 +25,6 @@ public class Ejercicio05 {
     }
 
     // Método para calcular el importe total después de un cierto período de meses
-    // Subprograma para calcular el importe total recibido por el cliente
     public static double calcularImporteTotal(double capital, double interesTotal) {
         return capital + interesTotal;
     }
