@@ -62,7 +62,7 @@ public class ProyectoFinal {
         System.out.println("╠═════════════════════════════════╣");
         for (Map.Entry<String, Integer> entry : productos.entrySet()) {
             numcant += entry.getValue();
-            System.out.printf("║ %-18s | %-10d ║%n", entry.getKey(), entry.getValue());
+            System.out.printf("║ %-18s | %-10s ║%n", entry.getKey(), entry.getValue());
         }
         if (numcant == 0) {
             System.out.println("║ Sin Productos :(                ║");
@@ -80,7 +80,6 @@ public class ProyectoFinal {
         productos.put(productoEntrada, stockActual + cantidadEntrada);
         Resumen();
         System.out.println("Se ha registrado el vale de entrada. Stock actual de " + productoEntrada + ": " + productos.get(productoEntrada));
-
     }
 
     public static void Salida(String productoSalida) {
